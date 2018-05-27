@@ -2,15 +2,15 @@ package br.unama.fabsoft.bean;
 
 public class TipoAlimento {
 
-	private int cod;
+	private int id;
 	private String descricao;
 
-	public int getCod() {
-		return cod;
+	public int getId() {
+		return id;
 	}
 
-	public void setId(int cod) {
-		this.cod = cod;
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getDescricao() {
