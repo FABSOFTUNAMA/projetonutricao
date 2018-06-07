@@ -7,6 +7,7 @@ public class AlimentacaoHabitualBean {
 	private String lancheTarde;
 	private String jantar;
 	private String ceia;
+	private String lancheManha;
 
 	public int getId() {
 		return idAlimHabitual;
@@ -16,12 +17,29 @@ public class AlimentacaoHabitualBean {
 		this.idAlimHabitual = id;
 	}
 
+	
+	public int getIdAlimHabitual() {
+		return idAlimHabitual;
+	}
+
+	public void setIdAlimHabitual(int idAlimHabitual) {
+		this.idAlimHabitual = idAlimHabitual;
+	}
+
 	public String getDesjejum() {
 		return desjejum;
 	}
 
 	public void setDesjejum(String desjejum) {
 		this.desjejum = desjejum;
+	}
+
+	public String getLancheManha() {
+		return lancheManha;
+	}
+
+	public void setLancheManha(String lancheManha) {
+		this.lancheManha = lancheManha;
 	}
 
 	public String getAlmoco() {
