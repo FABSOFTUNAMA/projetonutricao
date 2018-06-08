@@ -15,6 +15,7 @@ public class TesteConnectionBD {
 	public void TesteConnectionBD() throws SQLException {
 		ConnectionBD con = new ConnectionBD();
 		
+		
 		Connection conexao = con.getConnection();
 		assertEquals(true, conexao.isValid(0));
 		conexao.close();
