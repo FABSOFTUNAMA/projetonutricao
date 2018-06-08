@@ -6,6 +6,7 @@ import java.sql.SQLException;
 
 public class ConnectionBD {
 	private static Connection connection;
+	
 	private static String url = "jdbc:postgresql://179.188.16.113:5432/fslaca2018"; 
 	private static String user = "fslaca2018";
 	private static String pass = "Laca@36fs9*";
