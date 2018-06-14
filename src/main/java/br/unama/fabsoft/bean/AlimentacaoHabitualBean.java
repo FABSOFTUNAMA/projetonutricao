@@ -8,9 +8,8 @@ public class AlimentacaoHabitualBean {
 	private String jantar;
 	private String ceia;
 	private String lancheManha;
-	private String tipoAlimHabitual;
-	private String alimHabitObservações;
-	
+	private TipoAlimentacaoHabitualBean tipoAlimHabitual;
+	private AlimHabitualObservacaoBean alimHabitObservações;
 
 	public int getId() {
 		return idAlimHabitual;
@@ -20,7 +19,6 @@ public class AlimentacaoHabitualBean {
 		this.idAlimHabitual = id;
 	}
 
-	
 	public int getIdAlimHabitual() {
 		return idAlimHabitual;
 	}
@@ -77,19 +75,19 @@ public class AlimentacaoHabitualBean {
 		this.ceia = ceia;
 	}
 
-	public String getTipoAlimHabitual() {
+	public TipoAlimentacaoHabitualBean getTipoAlimHabitual() {
 		return tipoAlimHabitual;
 	}
 
-	public void setTipoAlimHabitual(String tipoAlimHabitual) {
+	public void setTipoAlimHabitual(TipoAlimentacaoHabitualBean tipoAlimHabitual) {
 		this.tipoAlimHabitual = tipoAlimHabitual;
 	}
 
-	public String getAlimHabitObservações() {
+	public AlimHabitualObservacaoBean getAlimHabitObservações() {
 		return alimHabitObservações;
 	}
 
-	public void setAlimHabitObservações(String alimHabitObservações) {
+	public void setAlimHabitObservações(AlimHabitualObservacaoBean alimHabitObservações) {
 		this.alimHabitObservações = alimHabitObservações;
 	}
 

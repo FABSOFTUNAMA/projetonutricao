@@ -3,6 +3,7 @@ package br.unama.fabsoft.bean;
 public class AlimHabitualObservacaoBean {
 	private int idAlimHabObs;
 	private String observacoes;
+	private Paciente paciente;
 
 	public int getIdAlimHabObs() {
 		return idAlimHabObs;
@@ -20,4 +21,11 @@ public class AlimHabitualObservacaoBean {
 		this.observacoes = observacoes;
 	}
 
+	public Paciente getPaciente() {
+		return paciente;
+	}
+
+	public void setPaciente(Paciente paciente) {
+		this.paciente = paciente;
+	}
 }
