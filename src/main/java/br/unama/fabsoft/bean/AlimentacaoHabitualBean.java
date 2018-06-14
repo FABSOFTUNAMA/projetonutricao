@@ -10,7 +10,6 @@ public class AlimentacaoHabitualBean {
 	private String lancheManha;
 	private TipoAlimentacaoHabitualBean tipoAlimHabitual;
 	private AlimHabitualObservacaoBean alimHabitObservações;
-	
 
 	public int getId() {
 		return idAlimHabitual;
@@ -20,7 +19,6 @@ public class AlimentacaoHabitualBean {
 		this.idAlimHabitual = id;
 	}
 
-	
 	public int getIdAlimHabitual() {
 		return idAlimHabitual;
 	}
