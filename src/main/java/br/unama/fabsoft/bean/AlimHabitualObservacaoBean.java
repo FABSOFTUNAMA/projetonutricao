@@ -21,4 +21,11 @@ public class AlimHabitualObservacaoBean {
 		this.observacoes = observacoes;
 	}
 
+	public Paciente getPaciente() {
+		return paciente;
+	}
+	
+	public void setPaciente(Paciente paciente) {
+		this.paciente = paciente;
+	}
 }
