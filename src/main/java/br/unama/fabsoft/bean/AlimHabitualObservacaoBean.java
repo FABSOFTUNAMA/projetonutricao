@@ -3,6 +3,7 @@ package br.unama.fabsoft.bean;
 public class AlimHabitualObservacaoBean {
 	private int idAlimHabObs;
 	private String observacoes;
+	private Paciente paciente;
 
 	public int getIdAlimHabObs() {
 		return idAlimHabObs;
