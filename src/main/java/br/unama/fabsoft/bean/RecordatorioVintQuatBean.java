@@ -7,6 +7,7 @@ public class RecordatorioVintQuatBean {
 	private String local;
 	private String alimento;
 	private double quantidade;
+	private Paciente paciente;
 	
 	
 	public int getId() {
@@ -44,6 +45,12 @@ public class RecordatorioVintQuatBean {
 	}
 	public void setQuantidade(double quantidade) {
 		this.quantidade = quantidade;
+	}
+	public Paciente getPaciente() {
+		return paciente;
+	}
+	public void setPaciente(Paciente paciente) {
+		this.paciente = paciente;
 	}
 	
 	
