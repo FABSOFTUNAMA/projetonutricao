@@ -7,7 +7,8 @@ public class AvaliacaoBioquimicaBean {
 	private Paciente id_pessoa;
 	private String exameLab;
 	private String referencia;
-	private Date[] dataRealizacao = new Date[4];
+	private Date dataRealizacao;
+	private String obseracao;
 
 	public int getId_avalBioquimica() {
 		return id_avalBioquimica;
@@ -41,12 +42,20 @@ public class AvaliacaoBioquimicaBean {
 		this.referencia = referencia;
 	}
 
-	public Date[] getDataRealizacao() {
+	public Date getDataRealizacao() {
 		return dataRealizacao;
 	}
 
-	public void setDataRealizacao(Date[] dataRealizacao) {
+	public void setDataRealizacao(Date dataRealizacao) {
 		this.dataRealizacao = dataRealizacao;
+	}
+
+	public String getObseracao() {
+		return obseracao;
+	}
+
+	public void setObseracao(String obseracao) {
+		this.obseracao = obseracao;
 	}
 
 }
