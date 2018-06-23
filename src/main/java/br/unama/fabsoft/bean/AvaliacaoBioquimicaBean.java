@@ -8,7 +8,7 @@ public class AvaliacaoBioquimicaBean {
 	private String exameLab;
 	private String referencia;
 	private Date dataRealizacao;
-	private String obseracao;
+	private String observacao;
 
 	public int getId_avalBioquimica() {
 		return id_avalBioquimica;
@@ -50,12 +50,12 @@ public class AvaliacaoBioquimicaBean {
 		this.dataRealizacao = dataRealizacao;
 	}
 
-	public String getObseracao() {
-		return obseracao;
+	public String getObservacao() {
+		return observacao;
 	}
 
-	public void setObseracao(String obseracao) {
-		this.obseracao = obseracao;
+	public void setObservacao(String observacao) {
+		this.observacao = observacao;
 	}
 
 }
