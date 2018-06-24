@@ -11,6 +11,7 @@ import br.unama.fabsoft.connection.ConnectionBD;
 
 public class AvaliacaoBioquimicaDao {
 	public void salvar(AvaliacaoBioquimicaBean avaBioquimica){
+		String st;
 		
 		Connection conexao = ConnectionBD.getConnection();
 		PreparedStatement insereSt = null;
