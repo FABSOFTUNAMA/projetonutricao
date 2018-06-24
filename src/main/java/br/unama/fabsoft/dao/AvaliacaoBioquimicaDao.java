@@ -24,7 +24,7 @@ public class AvaliacaoBioquimicaDao {
 		try {
 			insereSt = conexao.prepareStatement(sql.toString());
 			insereSt.setInt(1, avaBioquimica.getId_avalBioquimica());
-			insereSt.setObject(2, avaBioquimica.getId_pessoa());
+			insereSt.setObject(2, avaBioquimica.getPaciente_id());
 			insereSt.setString(3, avaBioquimica.getExameLab());
 			insereSt.setString(4, avaBioquimica.getReferencia());
 			insereSt.setDate(5,(Date) avaBioquimica.getDataRealizacao());
