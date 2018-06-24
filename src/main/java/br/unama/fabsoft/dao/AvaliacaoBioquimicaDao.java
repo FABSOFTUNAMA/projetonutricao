@@ -10,23 +10,24 @@ import br.unama.fabsoft.connection.ConnectionBD;
 
 
 public class AvaliacaoBioquimicaDao {
-	public void salvar(AvaliacaoBioquimicaBean avaBioquimica) {
+	public void salvar(AvaliacaoBioquimicaBean avaBioquimica){
 		
 		Connection conexao = ConnectionBD.getConnection();
+		PreparedStatement insereSt = null;
+		StringBuilder sql = new StringBuilder();
 
-		String sql = "INSERT INTO AVALIACAO_BIOQUIMICA"
-				+ "(ID, PACIENTE_ID, EXAME_LAB, REFERENCIA, DATA_REALIZACAO, OBSERVACAO)"
-				+ "VALUES(?, ?, ?, ?, ?, ?)";
+		sql.append("INSERT INTO \"AVALIACAO_BIOQUIMICA\" "
+				+ "(\"ID\", \"PACIENTE_ID\", \"EXAME_LAB\", \"REFERENCIA\", \"DATA_REALIZACAO\", \"OBSERVACAO\")"
+				+ "VALUES(?, ?, ?, ?, ?, ?)");
 		
-		PreparedStatement insereSt = conexao.prepareStatement(sql.toString());
 		
 		try {
-			
+			insereSt = conexao.prepareStatement(sql.toString());
 			insereSt.setInt(1, avaBioquimica.getId_avalBioquimica());
 			insereSt.setObject(2, avaBioquimica.getId_pessoa());
 			insereSt.setString(3, avaBioquimica.getExameLab());
 			insereSt.setString(4, avaBioquimica.getReferencia());
-			insereSt.setDate(5,avaBioquimica.getDataRealizacao());
+			insereSt.setDate(5,(Date) avaBioquimica.getDataRealizacao());
 			insereSt.setString(6, avaBioquimica.getObservacao());
 			
 			insereSt.executeUpdate();

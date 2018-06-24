@@ -1,10 +1,11 @@
 package br.unama.fabsoft.bean;
 
+import java.text.ParseException;
 import java.util.Date;
 
 public class AvaliacaoBioquimicaBean {
 	private int id_avalBioquimica;
-	private Paciente id_pessoa;
+	private Paciente paciente_id;
 	private String exameLab;
 	private String referencia;
 	private Date dataRealizacao;
@@ -18,12 +19,12 @@ public class AvaliacaoBioquimicaBean {
 		this.id_avalBioquimica = id_avalBioquimica;
 	}
 
-	public Paciente getId_pessoa() {
-		return id_pessoa;
+	public Paciente getPaciente_id() {
+		return paciente_id;
 	}
 
-	public void setId_pessoa(Paciente id_pessoa) {
-		this.id_pessoa = id_pessoa;
+	public void setPaciente_id(Paciente paciente_id) {
+		this.paciente_id = paciente_id;
 	}
 
 	public String getExameLab() {
@@ -47,6 +48,7 @@ public class AvaliacaoBioquimicaBean {
 	}
 
 	public void setDataRealizacao(Date dataRealizacao) {
+
 		this.dataRealizacao = dataRealizacao;
 	}
 
