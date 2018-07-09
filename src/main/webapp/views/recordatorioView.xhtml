@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"	
+	xmlns:f="http://xmlns.jcp.org/jsf/core" 
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Recordátorio Vinte Quatro Horas</title>
+</h:head>
+
+<h:body>
+	
+	<h:form>
+		<h:panelGrid columns="2">
+			<p:outputLabel for="button" value="Data:" />
+        	<p:calendar id="button" value="#{calendarView.date3}" pattern="dd-MM-yyyy" showOn="button" />
+        	<h:outputText value="Local:" />
+        	<p:inputText />
+        	<h:outputText value="Alimento:" />
+        	<p:inputText />
+        	<h:outputText value="Quantidade:" />
+        	<p:inputText />
+        </h:panelGrid>
+        	
+        <h:panelGrid columns="3">
+        	<p:outputLabel for="btn1" value="" />
+        	<p:commandButton id="btn1" value="Adicionar" icon="ui-icon-disk" type="button"/>
+        	<p:outputLabel for="btn2" value="" />
+        	<p:commandButton id="btn2" value="Editar" icon="fa-fa-edit" type="button"/>
+        	<p:outputLabel for="btn3" value="" />
+        	<p:commandButton id="btn3" value="Excluir" icon="ui-icon-close" type="button"/>
+        </h:panelGrid>		
+        	
+        	
+		
+		
+	</h:form>
+	
+</h:body>
+</html>
