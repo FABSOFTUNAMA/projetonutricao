@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"	
+	xmlns:f="http://xmlns.jcp.org/jsf/core" 
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Recordátorio Vinte Quatro Horas</title>
+</h:head>
+
+<h:body>
+	
+	<div class="ui-fluid">
+		
+    <p:panelGrid columns="4" columnClasses="ui-grid-col-2,ui-grid-col-3" layout="grid" styleClass="ui-panelgrid-blank">
+		
+			<p:outputLabel for="button" value="Data:" />
+        	<p:calendar id="button" value="#{calendarView.date3}" pattern="dd-MM-yyyy" showOn="button" />
+        	<p:outputLabel for="time" value="Hora:" />
+            <p:calendar id="time" value="#{calendarView.date11}" pattern="HH:mm" timeOnly="true"  />
+        	<h:outputText value="Local:" />
+        	<p:inputText />
+        	<h:outputText value="Alimento:" />
+        	<p:inputText />
+        	<h:outputText value="Quantidade:" />
+        	<p:inputText />
+
+        	<p:outputLabel for="btn1" value="" />
+        	<p:commandButton id="btn1" value="Adicionar" icon="ui-icon-disk" type="button"/>
+        	<p:outputLabel for="btn3" value="" />
+        	<p:commandButton id="btn3" value="Excluir" icon="ui-icon-trash" type="button"/>
+        	
+        
+	  </p:panelGrid>
+	  		<font></font>
+			<p:dataTable var="car" value="#{dtBasicView.cars}">
+		    <p:column headerText="Refeição/Horário">
+		        <h:outputText value="#{car.id}" />
+		    </p:column>
+		 
+		    <p:column headerText="Local" priority="3">
+		        <h:outputText value="#{car.year}" />
+		    </p:column>
+		 
+		    <p:column headerText="Alimento" priority="2">
+		        <h:outputText value="#{car.brand}" />
+		    </p:column>
+		 
+		    <p:column headerText="Quantidade" priority="4">
+		        <h:outputText value="#{car.color}" />
+		    </p:column>
+		</p:dataTable>
+</div>
+</h:body>
+</html>
