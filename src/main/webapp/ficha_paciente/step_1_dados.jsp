@@ -52,7 +52,7 @@
 	</div>
 	<div class="col-md-2 col-12">
 		<div class="form-group">
-			<label for="municipio">Município:</label> <select class="custom-select" id="minicipio">
+			<label for="municipio"><b>Município:</b></label> <select class="custom-select" id="minicipio">
 
 				<option selected>Outros</option>
 				<option value="1">Belém</option>
