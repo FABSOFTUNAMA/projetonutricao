@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/*CORPO DO SITE*/
+
+h1{
+	text-align: center; text-decoration: underline; margin-top: 20px;
+}
+
+button{
+	margin-top: 32px;
+}
+
+form{
+	margin-left: 10px;
+}
