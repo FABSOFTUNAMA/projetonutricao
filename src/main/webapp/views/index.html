@@ -1,16 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Projeto Nutrição</title>
+<title>Projeto Nutrição</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
 </head>
 <body>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
+	<div>
+		<center>
+			<b>FICHA DE ATENDIMENTO NUTRICIONAL</b>
+		</center>
+		<b class="col-4">Dados de indentificação:</b>
+	</div>
+	<div class="col-4">
+		<form>
+			<div class="form-group">
+				<label for="textNome"><b>Nome:</b></label> <input type="text"
+					class="form-control " id="textNome"
+					placeholder="Entre com o nome completo sem abreviações">
+			</div>
+
+			<div class="form-group form-check">
+				<b class="row"> Sexo:</b> <input type="checkbox"
+					class="form-check-input" id="checkBoxMas"> <label
+					class="form-check-label" for="checkBoxMas">Masculino</label> <input
+					type="checkbox" class="form-check-input1" id="checkBoxFem">
+				<label class="form-check-label" for="checkBoxFem">Feminino</label>
+
+			</div>
+
+			<div class="form-group">
+				<b> Data de Nascimento:</b> <input type="date"
+					class="form-control col-5" id="data">
+			</div>
+			<div class="form-group">
+				<b>Estado Civil:</b> <select class="custom-select col-4">
+
+					<option selected>Outros</option>
+					<option value="1">Solteiro</option>
+					<option value="2">Casado</option>
+					<option value="3">Viúvo</option>
+					<option value="4">Divorciado</option>
+				</select>
+			</div>
+			<div>
+			<label for="textFone"><b>Telefone(fixo/celular):</b></label> <input type="text"
+					class="form-control " id="textFone"
+					placeholder="Entre com o telefone fixo ou celular">
+			</div>
+			<div>
+			<label for="textEnder"><b>Endereço:</b></label> <input type="text"
+					class="form-control " id="textEnder"
+					placeholder="Entre com o endereço">			
+			</div>
+			<div class="form-group">
+				<b>Município:</b> <select class="custom-select col-4">
+
+					<option selected>Outros</option>
+					<option value="1">Belém</option>
+					<option value="2">Ananideua</option>
+					<option value="3">Santarém</option>
+					<option value="4">Marabá</option>
+					<option value="5">Parauapebas</option>
+					<option value="6">Castanhal</option>
+					<option value="7">Abaetetuba</option>
+					<option value="8">Cametá</option>
+					<option value="9">Marituba</option>
+					<option value="10">Bragança</option>
+					<option value="11">São Félix do Xingu</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="Naturalidade"><b>Naturalidade/Nacionalidade:</b></label> <input type="text"
+					class="form-control " id="Naturalidade"
+					placeholder="Nacionalidade ou Naturalidade">
+					<label for="EtniaRegiao"><b>Etnia/Região</b></label>
+					<input type="text" class="form-control" id="EtiniaRegiao" placeholder="Etnia e Religião">
+					<label for="email"><b>E-mail:</b></label>
+					<input type="text" class="form-control" id="email" placeholder="Entre com o e-mail">
+					
+			</div>
+
+			<button type="submit" class="btn btn-primary">Next</button>
+		</form>
+
+	</div>
 </body>
 </html>
