@@ -116,135 +116,166 @@
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#step-3" role="tab">Anamnese clínica e nutricional</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#step-4" role="tab">Avaliação bioquímica</a>
+                    </li>
                 </ul>
 
                 <div class="tab-content" id="myTabContent">
-                    <form>
-                        <div class="tab-pane fade show active" id="step-1" role="tabpanel">
-                            <div>
-                                <center>
-                                    <b>FICHA DE ATENDIMENTO NUTRICIONAL</b>
-                                </center>
-                                <b class="col-4">Dados de indentificação:</b>
+                    <div class="tab-pane fade show active" id="step-1" role="tabpanel">
+
+                        <div class="form-group">
+                            <label for="textNome"><b>Nome:</b></label> <input type="text"
+                            class="form-control " id="textNome"
+                            placeholder="Entre com o nome completo sem abreviações">
+                        </div>
+
+                        <div class="form-group form-check">
+                            <b class="row"> Sexo:</b> <input type="checkbox"
+                            class="form-check-input" id="checkBoxMas"> <label
+                            class="form-check-label" for="checkBoxMas">Masculino</label> <input
+                            type="checkbox" class="form-check-input1" id="checkBoxFem">
+                            <label class="form-check-label" for="checkBoxFem">Feminino</label>
+
+                        </div>
+
+                        <div class="form-group">
+                            <b> Data de Nascimento:</b> <input type="date"
+                            class="form-control col-5" id="data">
+                        </div>
+                        <div class="form-group">
+                            <b>Estado Civil:</b> <select class="custom-select col-4">
+
+                                <option selected>Outros</option>
+                                <option value="1">Solteiro</option>
+                                <option value="2">Casado</option>
+                                <option value="3">Viúvo</option>
+                                <option value="4">Divorciado</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="textFone"><b>Telefone(fixo/celular):</b></label> <input type="text"
+                            class="form-control " id="textFone"
+                            placeholder="Entre com o telefone fixo ou celular">
+                        </div>
+                        <div>
+                            <label for="textEnder"><b>Endereço:</b></label> <input type="text"
+                            class="form-control " id="textEnder"
+                            placeholder="Entre com o endereço">
+                        </div>
+                        <div class="form-group">
+                            <b>Município:</b> <select class="custom-select col-4">
+
+                                <option selected>Outros</option>
+                                <option value="1">Belém</option>
+                                <option value="2">Ananideua</option>
+                                <option value="3">Santarém</option>
+                                <option value="4">Marabá</option>
+                                <option value="5">Parauapebas</option>
+                                <option value="6">Castanhal</option>
+                                <option value="7">Abaetetuba</option>
+                                <option value="8">Cametá</option>
+                                <option value="9">Marituba</option>
+                                <option value="10">Bragança</option>
+                                <option value="11">São Félix do Xingu</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="Naturalidade"><b>Naturalidade/Nacionalidade:</b></label> <input type="text"
+                            class="form-control " id="Naturalidade"
+                            placeholder="Nacionalidade ou Naturalidade">
+                            <label for="EtniaRegiao"><b>Etnia/Região</b></label>
+                            <input type="text" class="form-control" id="EtiniaRegiao" placeholder="Etnia e Religião">
+                            <label for="email"><b>E-mail:</b></label>
+                            <input type="text" class="form-control" id="email" placeholder="Entre com o e-mail">
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="step-2" role="tabpanel">
+                        História sócio-econômica
+                    </div>
+
+                    <div class="tab-pane fade" id="step-3" role="tabpanel">
+                        <div class="form-group">
+                            <label>Motivo da consulta</label>
+                            <textarea class="form-control" rows="3" placeholder="Digite o motivo da consulta"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Já realizou tratamento nutricional anteriormente?</label>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="acn_tratamento_anterior_y" name="acn_tratamento_anterior" value="s">
+                                <label class="form-check-label" for="acn_tratamento_anterior_y">Sim</label>
                             </div>
-                            <div class="col-4">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="textNome"><b>Nome:</b></label> <input type="text"
-                                        class="form-control " id="textNome"
-                                        placeholder="Entre com o nome completo sem abreviações">
-                                    </div>
 
-                                    <div class="form-group form-check">
-                                        <b class="row"> Sexo:</b> <input type="checkbox"
-                                        class="form-check-input" id="checkBoxMas"> <label
-                                        class="form-check-label" for="checkBoxMas">Masculino</label> <input
-                                        type="checkbox" class="form-check-input1" id="checkBoxFem">
-                                        <label class="form-check-label" for="checkBoxFem">Feminino</label>
-
-                                    </div>
-
-                                    <div class="form-group">
-                                        <b> Data de Nascimento:</b> <input type="date"
-                                        class="form-control col-5" id="data">
-                                    </div>
-                                    <div class="form-group">
-                                        <b>Estado Civil:</b> <select class="custom-select col-4">
-
-                                            <option selected>Outros</option>
-                                            <option value="1">Solteiro</option>
-                                            <option value="2">Casado</option>
-                                            <option value="3">Viúvo</option>
-                                            <option value="4">Divorciado</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <label for="textFone"><b>Telefone(fixo/celular):</b></label> <input type="text"
-                                        class="form-control " id="textFone"
-                                        placeholder="Entre com o telefone fixo ou celular">
-                                    </div>
-                                    <div>
-                                        <label for="textEnder"><b>Endereço:</b></label> <input type="text"
-                                        class="form-control " id="textEnder"
-                                        placeholder="Entre com o endereço">
-                                    </div>
-                                    <div class="form-group">
-                                        <b>Município:</b> <select class="custom-select col-4">
-
-                                            <option selected>Outros</option>
-                                            <option value="1">Belém</option>
-                                            <option value="2">Ananideua</option>
-                                            <option value="3">Santarém</option>
-                                            <option value="4">Marabá</option>
-                                            <option value="5">Parauapebas</option>
-                                            <option value="6">Castanhal</option>
-                                            <option value="7">Abaetetuba</option>
-                                            <option value="8">Cametá</option>
-                                            <option value="9">Marituba</option>
-                                            <option value="10">Bragança</option>
-                                            <option value="11">São Félix do Xingu</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="Naturalidade"><b>Naturalidade/Nacionalidade:</b></label> <input type="text"
-                                        class="form-control " id="Naturalidade"
-                                        placeholder="Nacionalidade ou Naturalidade">
-                                        <label for="EtniaRegiao"><b>Etnia/Região</b></label>
-                                        <input type="text" class="form-control" id="EtiniaRegiao" placeholder="Etnia e Religião">
-                                        <label for="email"><b>E-mail:</b></label>
-                                        <input type="text" class="form-control" id="email" placeholder="Entre com o e-mail">
-
-                                    </div>
-
-                                    <button type="submit" class="btn btn-primary">Next</button>
-                                </form>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="acn_tratamento_anterior_n" name="acn_tratamento_anterior" value="n">
+                                <label class="form-check-label" for="acn_tratamento_anterior_n">Não</label>
                             </div>
                         </div>
 
-                        <div class="tab-pane fade" id="step-2" role="tabpanel">
-                            História sócio-econômica
+                        <div class="form-group d-none-custom" id="acn_tratamento_anterior_motivo">
+                            <label>Quando foi o tratamento e qual o motivo?</label>
+                            <textarea class="form-control" placeholder="Digite o período do tratamento e qual o motivo"></textarea>
                         </div>
 
-                        <div class="tab-pane fade" id="step-3" role="tabpanel">
-                            <div class="form-group">
-                                <label>Motivo da consulta</label>
-                                <textarea class="form-control" rows="3" placeholder="Digite o motivo da consulta"></textarea>
+                        <div class="form-group">
+                            <label>Alimenta-se fora de casa com frequência?</label>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="acn_alimenta_fora_y" name="acn_alimenta_fora" value="s">
+                                <label class="form-check-label" for="acn_alimenta_fora_y">Sim</label>
                             </div>
 
-                            <div class="form-group">
-                                <label>Já realizou tratamento nutricional anteriormente?</label>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" id="acn_tratamento_anterior_y" name="acn_tratamento_anterior" value="s">
-                                    <label class="form-check-label" for="acn_tratamento_anterior_y">Sim</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" id="acn_tratamento_anterior_n" name="acn_tratamento_anterior" value="n">
-                                    <label class="form-check-label" for="acn_tratamento_anterior_n">Não</label>
-                                </div>
-                            </div>
-
-                            <div class="form-group d-none-custom" id="acn_tratamento_anterior_motivo">
-                                <label>Quando foi o tratamento e qual o motivo?</label>
-                                <textarea class="form-control" placeholder="Digite o período do tratamento e qual o motivo"></textarea>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Alimenta-se fora de casa com frequência?</label>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" id="acn_alimenta_fora_y" name="acn_alimenta_fora" value="s">
-                                    <label class="form-check-label" for="acn_alimenta_fora_y">Sim</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" id="acn_alimenta_fora_n" name="acn_alimenta_fora" value="n">
-                                    <label class="form-check-label" for="acn_alimenta_fora_n">Não</label>
-                                </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="acn_alimenta_fora_n" name="acn_alimenta_fora" value="n">
+                                <label class="form-check-label" for="acn_alimenta_fora_n">Não</label>
                             </div>
                         </div>
-                    </form>
+                    </div>
+
+                    <div class="tab-pane fade" id="step-4" role="tabpanel">
+                        <div class="form-row">
+                            <div class="form-group col-md-9">
+                                <label for="inputEmail4">Exame laboratorial</label>
+                                <input type="text" class="form-control" id="exameLab" placeholder="Digite o exame laboratorial realizado">
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <label>Referência</label>
+                                <input type="text" class="form-control" id="referencia" placeholder="Digite a referência">
+                            </div>
+
+                            <div class="form-group col-md-3">
+                                <label>Data</label>
+                                <input type="date" class="form-control" id="dataExame" placeholder="Digite a data do Exame">
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <button type="button" class="btn btn-primary btn-new">Adicionar exame e data</button> ou
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <button type="button"class="btn btn-primary btn-add">Adicionar nova data</button>
+                            </div>
+                        </div>
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr class="topo-tabela">
+                                    <th scope="col">Exames Laboratoriais</th>
+                                    <th scope="col">Referência</th>
+                                    <th scope="col" class="datas">Data(s)</th>
+                                </tr>
+                            </thead>
+
+                            <tbody class="corpo-tabela">
+
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </main>
         </div>
