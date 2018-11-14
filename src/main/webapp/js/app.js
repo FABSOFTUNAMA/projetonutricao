@@ -6,17 +6,31 @@ $('input:radio[name="acn_tratamento_anterior"]').on('change', function(){
     }
 });
 
-function adicionaTudo(e){
-    var exame = $("#exameLab").val();
-    var referencia = $("#referencia").val();
-    var data = $("#dataExame").val();
 
-    var html = "<tr>" + "<td>" + exame + "</td>" + "<td>" + referencia + "</td>" + "<td>" + data + "</td>" + "</tr>"
+AvBioquimica = {
+    addExame: function() {
+        var exame = $("#av_bq_exame").val();
+        var ref = $("#av_bq_exame_ref").val();
 
-    $(".corpo-tabela").append(html);
-    $(".formulario").reset();
+
+        var htmlCorpo = "<tr>" +
+        "<td>" + exame + "</td>" +
+        "<td>" + ref + "</td>" +
+        '<td><button class="btn btn-primary add-resultado-exame-button">Adicionar resultado</button></td>' +
+        "</tr>";
+
+        $(".corpo-tabela").append(htmlCorpo);
+    },
+    addResultado: function() {
+        var html = '<input type="date" placeholder="Data do exame">' + 
+        '<input type="text" placeholder="Resultado do exame">';
+
+        $(this).parent().prepend(html);
+    }
 }
 
+
 $(document).ready(function() {
-    $(".btn-new").on("click",adicionaTudo);
+    $(".add-exame-button").on('click', AvBioquimica.addExame);
+    $(document).on('click', '.add-resultado-exame-button', AvBioquimica.addResultado);
 });
