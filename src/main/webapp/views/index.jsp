@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,7 +10,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
         <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">UNAMA - Clínica Nutrição</a>
@@ -116,58 +116,28 @@
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#step-3" role="tab">Anamnese clínica e nutricional</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#step-4" role="tab">Avaliação bioquímica</a>
+                    </li>
                 </ul>
 
                 <div class="tab-content" id="myTabContent">
-                    <form>
-                        <div class="tab-pane fade show active" id="step-1" role="tabpanel">
-                            Dados de identificação
-                        </div>
+                    <div class="tab-pane fade show active" id="step-1" role="tabpanel">
+                        <jsp:include page="../ficha_paciente/step_1_dados.jsp"></jsp:include>
+                    </div>
 
-                        <div class="tab-pane fade" id="step-2" role="tabpanel">
-                            História sócio-econômica
-                        </div>
+                    <div class="tab-pane fade" id="step-2" role="tabpanel">
+                        <jsp:include page="../ficha_paciente/step_2_historico.jsp"></jsp:include>
+                    </div>
 
-                        <div class="tab-pane fade" id="step-3" role="tabpanel">
-                            <div class="form-group">
-                                <label>Motivo da consulta</label>
-                                <textarea class="form-control" rows="3" placeholder="Digite o motivo da consulta"></textarea>
-                            </div>
+                    <div class="tab-pane fade" id="step-3" role="tabpanel">
+                        <jsp:include page="../ficha_paciente/step_3_anamnese_clinica.jsp"></jsp:include>
+                    </div>
 
-                            <div class="form-group">
-                                <label>Já realizou tratamento nutricional anteriormente?</label>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" id="acn_tratamento_anterior_y" name="acn_tratamento_anterior" value="s">
-                                    <label class="form-check-label" for="acn_tratamento_anterior_y">Sim</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" id="acn_tratamento_anterior_n" name="acn_tratamento_anterior" value="n">
-                                    <label class="form-check-label" for="acn_tratamento_anterior_n">Não</label>
-                                </div>
-                            </div>
-
-                            <div class="form-group d-none-custom" id="acn_tratamento_anterior_motivo">
-                                <label>Quando foi o tratamento e qual o motivo?</label>
-                                <textarea class="form-control" placeholder="Digite o período do tratamento e qual o motivo"></textarea>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Alimenta-se fora de casa com frequência?</label>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" id="acn_alimenta_fora_y" name="acn_alimenta_fora" value="s">
-                                    <label class="form-check-label" for="acn_alimenta_fora_y">Sim</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" id="acn_alimenta_fora_n" name="acn_alimenta_fora" value="n">
-                                    <label class="form-check-label" for="acn_alimenta_fora_n">Não</label>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                    <div class="tab-pane fade" id="step-4" role="tabpanel">
+                        <jsp:include page="../ficha_paciente/step_4_avaliacao_bioquimica.jsp"></jsp:include>
+                    </div>
                 </div>
             </main>
         </div>
