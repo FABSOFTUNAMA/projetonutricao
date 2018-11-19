@@ -18,18 +18,4 @@ public class Paciente {
 	private String grauInstrucao;
 	private String profissao;
 	private String horarioTrabalho;
-	
-	private String acnMotivoConsulta;
-	private String acnTratamentoAnterior;
-	private String acnAlimentaFora;
-	private String acnAlergiaAlimentar;
-	private String acnIntoleranciaAlimentar;
-	private String acnTabuAlimentar;
-	private String acnAversaoAlimentar;
-	private String acnAtividadeFisicaNome;
-	private String acnAtividadeFisicaFrequencia;
-	private String acnAtividadeFisicaHorario;
-	private String acnIngestaoHidrica;
-	private String acnDiurese;
-	private String acnEvacuacao;
 }
