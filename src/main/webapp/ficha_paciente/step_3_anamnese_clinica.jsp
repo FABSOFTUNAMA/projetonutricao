@@ -56,7 +56,6 @@
     <textarea class="form-control" placeholder="Digite as alergias"></textarea>
 </div>
 
-
 <div class="form-group">
     <label>Intolerência alimentar?</label>
 
@@ -75,7 +74,6 @@
     <label>Quais as intolerâncias?</label>
     <textarea class="form-control" placeholder="Digite as intolerâncias"></textarea>
 </div>
-
 
 <div class="form-group">
     <label>Tabu alimentar?</label>
@@ -129,7 +127,6 @@
     </div>
 </div>
 
-
 <div class="d-none-custom" id="acn_atividade_fisica_abre">
     <div class="form-group">
         <label>Qual atividade física?</label>
@@ -149,7 +146,7 @@
 
 <div class="input-group mb-3">
     <input type="text" class="form-control" placeholder="Digite a ingestão hídrica">
-    
+
     <div class="input-group-append">
         <span class="input-group-text">/dia</span>
     </div>
@@ -163,4 +160,387 @@
 <div class="form-group">
     <label>Evacuação:</label>
     <input class="form-control" placeholder="Digite a evacuação">
+</div>
+
+<h1>Antecedente pessoal e familiar médico</h1>
+
+<table class="table table-bordered text-center">
+    <thead>
+        <tr>
+            <th></th>
+
+            <th colspan="2">DM</th>
+            <th colspan="2">HAS</th>
+            <th colspan="2">TLG</th>
+            <th colspan="2">AVC</th>
+            <th colspan="2">CA</th>
+            <th colspan="2">Osteop.</th>
+            <th colspan="2">Gastrite</th>
+            <th colspan="2">Cirurgia</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Próprio(a)</td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="dm_p" id="dm_p_sim" value="1">
+                    <label class="form-check-label" for="dm_p_sim">
+                        Sim
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="dm_p" id="dm_p_nao" value="0">
+                    <label class="form-check-label" for="dm_p_nao">
+                        Não
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="has_p" id="has_p_sim" value="1">
+                    <label class="form-check-label" for="has_p_sim">
+                        Sim
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="has_p" id="has_p_nao" value="0">
+                    <label class="form-check-label" for="has_p_nao">
+                        Não
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tlg_p" id="tlg_p_sim" value="1">
+                    <label class="form-check-label" for="tlg_p_sim">
+                        Sim
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tlg_p" id="tlg_p_nao" value="0">
+                    <label class="form-check-label" for="tlg_p_nao">
+                        Não
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="avc_p" id="avc_p_sim" value="1">
+                    <label class="form-check-label" for="avc_p_sim">
+                        Sim
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="avc_p" id="avc_p_nao" value="0">
+                    <label class="form-check-label" for="avc_p_nao">
+                        Não
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="ca_p" id="ca_p_sim" value="1">
+                    <label class="form-check-label" for="ca_p_sim">
+                        Sim
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="ca_p" id="ca_p_nao" value="0">
+                    <label class="form-check-label" for="ca_p_nao">
+                        Não
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="osteop_p" id="osteop_p_sim" value="1">
+                    <label class="form-check-label" for="osteop_p_sim">
+                        Sim
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="osteop_p" id="osteop_p_nao" value="0">
+                    <label class="form-check-label" for="osteop_p_nao">
+                        Não
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gastrite_p" id="gastrite_p_sim" value="1">
+                    <label class="form-check-label" for="gastrite_p_sim">
+                        Sim
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gastrite_p" id="gastrite_p_nao" value="0">
+                    <label class="form-check-label" for="gastrite_p_nao">
+                        Não
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="cirurgia_p" id="cirurgia_p_sim" value="1">
+                    <label class="form-check-label" for="cirurgia_p_sim">
+                        Sim
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="cirurgia_p" id="cirurgia_p_nao" value="0">
+                    <label class="form-check-label" for="cirurgia_p_nao">
+                        Não
+                    </label>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Familiar</td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="dm_f" id="dm_f_sim" value="1">
+                    <label class="form-check-label" for="dm_f_sim">
+                        Sim
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="dm_f" id="dm_f_nao" value="0">
+                    <label class="form-check-label" for="dm_f_nao">
+                        Não
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="has_f" id="has_f_sim" value="1">
+                    <label class="form-check-label" for="has_f_sim">
+                        Sim
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="has_f" id="has_f_nao" value="0">
+                    <label class="form-check-label" for="has_f_nao">
+                        Não
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tlg_f" id="tlg_f_sim" value="1">
+                    <label class="form-check-label" for="tlg_f_sim">
+                        Sim
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tlg_f" id="tlg_f_nao" value="0">
+                    <label class="form-check-label" for="tlg_f_nao">
+                        Não
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="avc_f" id="avc_f_sim" value="1">
+                    <label class="form-check-label" for="avc_f_sim">
+                        Sim
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="avc_f" id="avc_f_nao" value="0">
+                    <label class="form-check-label" for="avc_f_nao">
+                        Não
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="ca_f" id="ca_f_sim" value="1">
+                    <label class="form-check-label" for="ca_f_sim">
+                        Sim
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="ca_f" id="ca_f_nao" value="0">
+                    <label class="form-check-label" for="ca_f_nao">
+                        Não
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="osteop_f" id="osteop_f_sim" value="1">
+                    <label class="form-check-label" for="osteop_f_sim">
+                        Sim
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="osteop_f" id="osteop_f_nao" value="0">
+                    <label class="form-check-label" for="osteop_f_nao">
+                        Não
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gastrite_f" id="gastrite_f_sim" value="1">
+                    <label class="form-check-label" for="gastrite_f_sim">
+                        Sim
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gastrite_f" id="gastrite_f_nao" value="0">
+                    <label class="form-check-label" for="gastrite_f_nao">
+                        Não
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="cirurgia_f" id="cirurgia_f_sim" value="1">
+                    <label class="form-check-label" for="cirurgia_f_sim">
+                        Sim
+                    </label>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="cirurgia_f" id="cirurgia_f_nao" value="0">
+                    <label class="form-check-label" for="cirurgia_f_nao">
+                        Não
+                    </label>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="form-group">
+    <label>Outra(s):</label>
+    <input class="form-control" placeholder="Digite outros antecedentes">
+</div>
+
+<div class="form-group">
+    <label>Uso de medicamentos</label>
+
+    <div class="form-check">
+        <input class="form-check-input" type="radio" id="acn_uso_medicamentos_y" name="acn_uso_medicamentos" value="s">
+        <label class="form-check-label" for="acn_uso_medicamentos_y">Sim</label>
+    </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="radio" id="acn_uso_medicamentos_n" name="acn_uso_medicamentos" value="n">
+        <label class="form-check-label" for="acn_uso_medicamentos_n">Não</label>
+    </div>
+</div>
+
+<div class="form-group d-none-custom" id="acn_uso_medicamentos_motivo">
+    <label>Quais medicamentos?</label>
+    <textarea class="form-control" placeholder="Digite os medicamentos"></textarea>
+</div>
+
+<div class="form-group">
+    <label>Tabagista</label>
+
+    <div class="form-check">
+        <input class="form-check-input" type="radio" id="acn_tabagista_y" name="acn_tabagista" value="s">
+        <label class="form-check-label" for="acn_tabagista_y">Sim</label>
+    </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="radio" id="acn_tabagista_n" name="acn_tabagista" value="n">
+        <label class="form-check-label" for="acn_tabagista_n">Não</label>
+    </div>
+</div>
+
+<div class="form-group d-none-custom" id="acn_tabagista_motivo">
+    <label>Frequência: qtd/dia</label>
+    <textarea class="form-control" placeholder="Digite a frequência"></textarea>
+</div>
+
+<div class="form-group">
+    <label>Etilista</label>
+
+    <div class="form-check">
+        <input class="form-check-input" type="radio" id="acn_etilista_y" name="acn_etilista" value="s">
+        <label class="form-check-label" for="acn_etilista_y">Sim</label>
+    </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="radio" id="acn_etilista_n" name="acn_etilista" value="n">
+        <label class="form-check-label" for="acn_etilista_n">Não</label>
+    </div>
+</div>
+
+<div class="form-group d-none-custom" id="acn_etilista_motivo">
+    <label>Frequência: qtd/dia</label>
+    <textarea class="form-control" placeholder="Digite a frequência"></textarea>
+</div>
+
+<div class="form-group">
+    <label>Que horas dorme/acorda?</label>
+    <input class="form-control" placeholder="Digite o horário que dorme/acorda">
 </div>

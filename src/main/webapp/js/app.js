@@ -46,6 +46,30 @@ $('input:radio[name="acn_atividade_fisica"]').on('change', function(){
     }
 });
 
+$('input:radio[name="acn_uso_medicamentos"]').on('change', function(){
+    if ($(this).is(':checked') && $(this).val() == 's') {
+        $("#acn_uso_medicamentos_motivo").show();
+    } else {
+        $("#acn_uso_medicamentos_motivo").hide();
+    }
+});
+
+$('input:radio[name="acn_tabagista"]').on('change', function(){
+    if ($(this).is(':checked') && $(this).val() == 's') {
+        $("#acn_tabagista_motivo").show();
+    } else {
+        $("#acn_tabagista_motivo").hide();
+    }
+});
+
+$('input:radio[name="acn_etilista"]').on('change', function(){
+    if ($(this).is(':checked') && $(this).val() == 's') {
+        $("#acn_etilista_motivo").show();
+    } else {
+        $("#acn_etilista_motivo").hide();
+    }
+});
+
 
 function adicionaTudo(e){
     var exame = $("#exameLab").val();
