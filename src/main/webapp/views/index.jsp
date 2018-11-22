@@ -138,6 +138,10 @@
                     <div class="tab-pane fade" id="step-4" role="tabpanel">
                         <jsp:include page="../ficha_paciente/step_4_avaliacao_bioquimica.jsp"></jsp:include>
                     </div>
+                    
+                    <div class="tab-pane fade" id="step-7" role="tabpanel">
+                        <jsp:include page="../ficha_paciente/step_7_anamnese_alimentar_qa.jsp"></jsp:include>
+                    </div>
                 </div>
             </main>
         </div>
