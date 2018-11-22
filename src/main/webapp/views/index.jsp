@@ -122,7 +122,7 @@
                     </li>
                 </ul>
 
-                <div class="tab-content" id="myTabContent">
+                <form class="tab-content" id="myTabContent" action="ControladorIndex" method="post">
                     <div class="tab-pane fade show active" id="step-1" role="tabpanel">
                         <jsp:include page="../ficha_paciente/step_1_dados.jsp"></jsp:include>
                     </div>
@@ -138,7 +138,10 @@
                     <div class="tab-pane fade" id="step-4" role="tabpanel">
                         <jsp:include page="../ficha_paciente/step_4_avaliacao_bioquimica.jsp"></jsp:include>
                     </div>
-                </div>
+                    
+                    <input type="hidden" name="acao" value="cadastrar">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
             </main>
         </div>
     </div>

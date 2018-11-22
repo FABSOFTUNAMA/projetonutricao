@@ -1,0 +1,9 @@
+<Context>
+
+  <Resource name="jdbc/projeto-nutricao" 
+  auth="Container" type="javax.sql.DataSource"
+               maxActive="20" maxIdle="5" maxWait="10000"
+               username="unama_projeto_nutricao" password="Fr3zZFuGIoxA" 
+               driverClassName="com.mysql.cj.jdbc.Driver"
+               url="jdbc:mysql://104.196.110.124:3306/unama_projeto_nutricao?serverTimezone=UTC"/>
+</Context>

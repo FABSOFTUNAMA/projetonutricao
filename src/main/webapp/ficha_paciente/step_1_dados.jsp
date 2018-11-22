@@ -4,28 +4,31 @@
 		<div class="form-group">
 			<label for="textNome"><b>Nome:</b></label> <input type="text"
 				class="form-control " id="textNome"
+				name="nome"
 				placeholder="Entre com o nome completo sem abreviações">
 		</div>
 	</div>
 	<div class="col-md-3 col-12">
 		<div class="form-group form-check">
-			<b class="row"> Sexo:</b> <input type="checkbox"
-				class="form-check-input" id="checkBoxMas"> <label
-				class="form-check-label" for="checkBoxMas">Masculino</label> <input
-				type="checkbox" class="form-check-input1" id="checkBoxFem">
+			<b>Sexo:</b>
+			<br>
+			
+			<input type="radio" name="sexo" class="form-check-input" id="checkBoxMas">
+			<label class="form-check-label" for="checkBoxMas">Masculino</label>
+				
+			<input type="radio" name="sexo" class="form-check-input1" id="checkBoxFem">
 			<label class="form-check-label" for="checkBoxFem">Feminino</label>
 
 		</div>
 	</div>
 	<div class="col-md-2 col-12">
 		<div class="form-group">
-			<b> Data de Nascimento:</b> <input type="date" class="form-control"
-				id="data">
+			<b> Data de Nascimento:</b> <input type="date" name="data_nascimento" class="form-control"id="data">
 		</div>
 	</div>
 	<div class="col-md-3 col-12">
 		<div class="form-group">
-			<b>Estado Civil:</b> <select class="custom-select">
+			<b>Estado Civil:</b> <select name="estado_civil" class="custom-select">
 
 				<option selected>Outros</option>
 				<option value="1">Solteiro</option>
@@ -38,7 +41,7 @@
 	<div class="col-md-3 col-12">
 		<div>
 			<label for="textFone"><b>Telefone(fixo/celular):</b></label> <input
-				type="text" class="form-control " id="textFone"
+				type="text" name="telefone" class="form-control " id="textFone"
 				placeholder="Entre com o telefone fixo ou celular">
 		</div>
 	</div>
@@ -46,13 +49,13 @@
 	<div class="col-md-4 col-12">
 		<div>
 			<label for="textEnder"><b>Endereço:</b></label> <input type="text"
-				class="form-control " id="textEnder"
+				name="endereco" class="form-control " id="textEnder"
 				placeholder="Entre com o endereço">
 		</div>
 	</div>
 	<div class="col-md-2 col-12">
 		<div class="form-group">
-			<label for="municipio"><b>Município:</b></label> <select class="custom-select" id="minicipio">
+			<label for="municipio"><b>Município:</b></label> <select name="municipio" class="custom-select" id="minicipio">
 
 				<option selected>Outros</option>
 				<option value="1">Belém</option>
