@@ -6,6 +6,7 @@ $('input:radio[name="acn_tratamento_anterior"]').on('change', function(){
     }
 });
 
+<<<<<<< HEAD
 $('input:radio[name="acn_alergia_alimentar"]').on('change', function(){
     if ($(this).is(':checked') && $(this).val() == 's') {
         $("#acn_alergia_alimentar_motivo").show();
@@ -75,13 +76,33 @@ function adicionaTudo(e){
     var exame = $("#exameLab").val();
     var referencia = $("#referencia").val();
     var data = $("#dataExame").val();
+=======
+>>>>>>> 16913947d8663788008cb7de3b6a609afe66f33e
 
-    var html = "<tr>" + "<td>" + exame + "</td>" + "<td>" + referencia + "</td>" + "<td>" + data + "</td>" + "</tr>"
+AvBioquimica = {
+    addExame: function() {
+        var exame = $("#av_bq_exame").val();
+        var ref = $("#av_bq_exame_ref").val();
 
-    $(".corpo-tabela").append(html);
-    $(".formulario").reset();
+
+        var htmlCorpo = "<tr>" +
+        "<td>" + exame + "</td>" +
+        "<td>" + ref + "</td>" +
+        '<td><button class="btn btn-primary add-resultado-exame-button">Adicionar resultado</button></td>' +
+        "</tr>";
+
+        $(".corpo-tabela").append(htmlCorpo);
+    },
+    addResultado: function() {
+        var html = '<div class="form-group">' + '<input type="date" class="form-control" placeholder="Data do exame">' + 
+        '<input type="text" class="form-control" placeholder="Resultado do exame">' + '</div>';
+        
+        $(this).parent().prepend(html);
+    }
 }
 
+
 $(document).ready(function() {
-    $(".btn-new").on("click",adicionaTudo);
+    $(".add-exame-button").on('click', AvBioquimica.addExame);
+    $(document).on('click', '.add-resultado-exame-button', AvBioquimica.addResultado);
 });
