@@ -120,6 +120,10 @@
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#step-4" role="tab">Avaliação bioquímica</a>
                     </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#step-7" role="tab">Anamnese alimentar: questionário</a>
+                    </li>
                 </ul>
 
                 <div class="tab-content" id="myTabContent">
