@@ -6,7 +6,7 @@ $('input:radio[name="acn_tratamento_anterior"]').on('change', function(){
     }
 });
 
-<<<<<<< HEAD
+
 $('input:radio[name="acn_alergia_alimentar"]').on('change', function(){
     if ($(this).is(':checked') && $(this).val() == 's') {
         $("#acn_alergia_alimentar_motivo").show();
@@ -71,13 +71,6 @@ $('input:radio[name="acn_etilista"]').on('change', function(){
     }
 });
 
-
-function adicionaTudo(e){
-    var exame = $("#exameLab").val();
-    var referencia = $("#referencia").val();
-    var data = $("#dataExame").val();
-=======
->>>>>>> 16913947d8663788008cb7de3b6a609afe66f33e
 
 AvBioquimica = {
     addExame: function() {
