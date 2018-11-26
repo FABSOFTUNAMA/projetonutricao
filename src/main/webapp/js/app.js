@@ -71,6 +71,12 @@ $('input:radio[name="acn_etilista"]').on('change', function(){
     }
 });
 
+$(".change-tab-button").on('click', function() {
+    var nextTab = $(this).data('nexttab');
+
+    $("a[href='#"+nextTab+"']").tab('show');
+})
+
 
 AvBioquimica = {
     addExame: function() {

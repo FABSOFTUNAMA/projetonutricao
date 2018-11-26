@@ -134,45 +134,40 @@
                     <div class="tab-pane fade show active" id="step-1" role="tabpanel">
                         <jsp:include page="../ficha_paciente/step_1_dados.jsp"></jsp:include>
                         
-                        <button type="button" class="btn btn-primary change-tab-button" data-nextTab="step-2">Próximo</button>
+                        <button type="button" class="btn btn-primary change-tab-button" data-nexttab="step-2">Próximo</button>
                     </div>
 
                     <div class="tab-pane fade" id="step-2" role="tabpanel">
                         <jsp:include page="../ficha_paciente/step_2_historico.jsp"></jsp:include>
                         
-                        <button type="button" class="btn btn-primary change-tab-button" data-nextTab="step-3">Próximo</button>
+                        <button type="button" class="btn btn-primary change-tab-button" data-nexttab="step-3">Próximo</button>
                     </div>
 
                     <div class="tab-pane fade" id="step-3" role="tabpanel">
                         <jsp:include page="../ficha_paciente/step_3_anamnese_clinica.jsp"></jsp:include>
                         
-                        <button type="button" class="btn btn-primary change-tab-button" data-nextTab="step-4">Próximo</button>
+                        <button type="button" class="btn btn-primary change-tab-button" data-nexttab="step-4">Próximo</button>
                     </div>
 
                     <div class="tab-pane fade" id="step-4" role="tabpanel">
                         <jsp:include page="../ficha_paciente/step_4_avaliacao_bioquimica.jsp"></jsp:include>
                         
-                        <button type="button" class="btn btn-primary change-tab-button" data-nextTab="step-5">Próximo</button>
+                        <button type="button" class="btn btn-primary change-tab-button" data-nexttab="step-5">Próximo</button>
                     </div>
                     
                     <div class="tab-pane fade" id="step-7" role="tabpanel">
-                        <jsp:include page="../ficha_paciente/step_7_anamnese_alimentar_qa.jsp" data-nextTab="step-6"></jsp:include>
+                        <jsp:include page="../ficha_paciente/step_7_anamnese_alimentar_qa.jsp"></jsp:include>
                         
-                        <button type="button" class="btn btn-primary">Próximo</button>
+                        <button type="button" class="btn btn-primary change-tab-button" data-nexttab="step-8">Próximo</button>
                     </div>
                     
                     <div class="tab-pane fade" id="step-9" role="tabpanel">
                         <jsp:include page="../ficha_paciente/step_9_recordatorio.jsp"></jsp:include>
                         
-                        <button type="submit" class="btn btn-primary">Próximo</button>
-                    </div>
-                    
-                    <div class="tab-pane fade" id="step-7" role="tabpanel">
-                        <jsp:include page="../ficha_paciente/step_7_anamnese_alimentar_qa.jsp"></jsp:include>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
                     </div>
                     
                     <input type="hidden" name="acao" value="cadastrar">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
 
             </main>
