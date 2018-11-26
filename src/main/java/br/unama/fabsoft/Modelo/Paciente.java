@@ -2,6 +2,7 @@ package br.unama.fabsoft.Modelo;
 
 public class Paciente {
 	private int numeroProntuario;
+	
 	private String nome;
 	private char sexo;
 	private String dataNascimento;
@@ -18,8 +19,12 @@ public class Paciente {
 	private String grauInstrucao;
 	private String profissao;
 	private String horarioTrabalho;
+	
 	public int getNumeroProntuario() {
 		return numeroProntuario;
+	}
+	public Paciente() {
+		super();
 	}
 	public void setNumeroProntuario(int numeroProntuario) {
 		this.numeroProntuario = numeroProntuario;

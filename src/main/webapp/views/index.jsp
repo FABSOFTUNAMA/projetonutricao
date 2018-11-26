@@ -8,7 +8,7 @@
     <title>Projeto Nutrição</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/clinicanutricao/css/style.css">
 </head>
 <body>
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
@@ -124,12 +124,13 @@
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#step-7" role="tab">Anamnese alimentar: questionário</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#step-9" role="tab">Recordatório 24 horas</a>
                     </li>
                 </ul>
 
-                <div class="tab-content" id="myTabContent">
+                <form class="tab-content" id="myTabContent" action="ControladorIndex" method="post">
                     <div class="tab-pane fade show active" id="step-1" role="tabpanel">
                         <jsp:include page="../ficha_paciente/step_1_dados.jsp"></jsp:include>
                         
@@ -165,7 +166,15 @@
                         
                         <button type="submit" class="btn btn-primary">Próximo</button>
                     </div>
-                </div>
+                    
+                    <div class="tab-pane fade" id="step-7" role="tabpanel">
+                        <jsp:include page="../ficha_paciente/step_7_anamnese_alimentar_qa.jsp"></jsp:include>
+                    </div>
+                    
+                    <input type="hidden" name="acao" value="cadastrar">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+
             </main>
         </div>
     </div>
@@ -174,6 +183,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-    <script src="../js/app.js"></script>
+    <script src="/clinicanutricao/js/app.js"></script>
+    
 </body>
 </html>
