@@ -120,6 +120,10 @@
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#step-4" role="tab">Avaliação bioquímica</a>
                     </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#step-5" role="tab">Avaliação antropométrica</a>
+                    </li>
                 </ul>
 
                 <div class="tab-content" id="myTabContent">
@@ -137,6 +141,10 @@
 
                     <div class="tab-pane fade" id="step-4" role="tabpanel">
                         <jsp:include page="../ficha_paciente/step_4_avaliacao_bioquimica.jsp"></jsp:include>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="step-5" role="tabpanel">
+                        <jsp:include page="../ficha_paciente/step_5_avaliacao_antropometrica.jsp"></jsp:include>
                     </div>
                 </div>
             </main>
