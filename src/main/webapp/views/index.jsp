@@ -120,6 +120,10 @@
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#step-4" role="tab">Avaliação bioquímica</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#step-5" role="tab">Avaliação antropométrica</a>
+                    </li>
                     
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#step-7" role="tab">Anamnese alimentar: questionário</a>
@@ -154,7 +158,12 @@
                         
                         <button type="button" class="btn btn-primary change-tab-button" data-nexttab="step-5">Próximo</button>
                     </div>
+
+                    <div class="tab-pane fade" id="step-5" role="tabpanel">
+                        <jsp:include page="../ficha_paciente/step_5_avaliacao_antropometrica.jsp"></jsp:include>
+                    </div>
                     
+
                     <div class="tab-pane fade" id="step-7" role="tabpanel">
                         <jsp:include page="../ficha_paciente/step_7_anamnese_alimentar_qa.jsp"></jsp:include>
                         
@@ -169,7 +178,8 @@
                     
                     <input type="hidden" name="acao" value="cadastrar">
                 </form>
-
+                    
+                </div>
             </main>
         </div>
     </div>
