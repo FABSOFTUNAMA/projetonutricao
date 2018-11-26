@@ -120,6 +120,13 @@
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#step-4" role="tab">Avaliação bioquímica</a>
                     </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#step-7" role="tab">Anamnese alimentar: questionário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#step-9" role="tab">Recordatório 24 horas</a>
+                    </li>
                 </ul>
 
                 <div class="tab-content" id="myTabContent">
@@ -137,6 +144,13 @@
 
                     <div class="tab-pane fade" id="step-4" role="tabpanel">
                         <jsp:include page="../ficha_paciente/step_4_avaliacao_bioquimica.jsp"></jsp:include>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="step-7" role="tabpanel">
+                        <jsp:include page="../ficha_paciente/step_7_anamnese_alimentar_qa.jsp"></jsp:include>
+                    </div>
+                    <div class="tab-pane fade" id="step-9" role="tabpanel">
+                        <jsp:include page="../ficha_paciente/step_9_recordatorio.jsp"></jsp:include>
                     </div>
                 </div>
             </main>
